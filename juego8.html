@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>BangBang</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="css/juego8.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Art based on https://www.instagram.com/p/BsvHvCsnegd/ -->
+
+<div class="screen">
+  <div class="cloud cloud--2"></div>
+  <div class="cloud cloud--1"></div> 
+  <div class="js-opening opening-screen">
+    <img src="https://gilleskurt.com/thefearsomethree/ostitle.png" alt="" class="opening-screen__title">
+    <img src="https://gilleskurt.com/thefearsomethree/osfigures.png" alt="" class="opening-screen__figures">
+    <button class="js-start opening-screen__start-button"></button>
+    <div class="js-message message-box message-box--full is-hidden">
+      <p>Yuh parece tener un montón de arena en el buche de antaño. Creo que un gamberro como tú puede asumir el trabajo duro como el nuevo sheriff de la ciudad. No decepciones. <button type="button" class="js-continue continue-button">Continue...</button></p>
+    </div>
+  </div>
+  <div class="js-play is-hidden">
+    <div class="js-sheriff sheriff"></div>
+    <div class="js-opponent opponent opponent--1"></div>
+    <div class="message-box message-box--half">
+      <button type="button" class="js-draw shoot-button is-hidden">¡Dispara!</button>
+      <span class="js-result"></span>
+      <span class="js-message"></span>
+      <button type="button" class="js-result-continue continue-button is-hidden">Continue...</button>
+      <button type="button" class="js-duel continue-button is-hidden">Continue...</button>
+    </div>
+  </div>
+  <div class="js-outro is-hidden">
+    <div class="message-box message-box--full">
+      <span>Maldita sea, seguro que rápido en el sorteo. ¡Serás un sheriff devorador de demonios honrado!</span>
+      <span class="js-total-time"></span>
+      <button type="button" class="js-save-and-quit continue-button">Guardar y Salir...</button>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="js/juego8.js"></script>
+
+</body>
+</html>

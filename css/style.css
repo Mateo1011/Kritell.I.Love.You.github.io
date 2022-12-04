@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    background-color: black;
+
+    overflow: hidden;
+}
+span{
+    background: url(https://cdn2.iconfinder.com/data/icons/lin/128/14.png);
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-size: cover;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    /*--------------Third------------*/
+    animation: animation 7s linear;
+}
+#didi img{
+    width: 100%;
+    height: 60%;
+}
+
+.encabezado{
+width: 100%;
+}
+
+.hilo{
+    color:white;
+    text-align: center;
+    font-size: 50px;
+}
+.destino{
+    color: red;
+    text-align: center;
+    font-size: 40px;
+}
+
+.footer{
+    margin-top: 100px;
+}
+
+
+@keyframes animation{
+    0%{
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        /*-------Fourth----------*/
+        filter: hue-rotate(0);
+    }
+    100%{
+        transform: translate(-50%, -5000%);
+        opacity: 0;
+        /*-------Fourth----------*/
+        filter: hue-rotate(720deg);
+    }
+}
+@media screen and (max-width: 380px){
+
+    body{
+        width: 100%;
+    }
+
+}
